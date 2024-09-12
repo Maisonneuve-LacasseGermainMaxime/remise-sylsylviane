@@ -1,0 +1,27 @@
+main[data-name="a-propos"] *{
+    margin: auto;
+    max-width: 95ch;
+
+    
+}
+
+main[data-name="a-propos"] > section{
+    margin-bottom: var(--space-xl);
+
+}
+
+/* main[data-name="a-propos"] > a{
+    color: var(--color-link);
+    font-size: var(--font-size-lg);
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding: var(--space-lg);
+    background-color: var(--color-accent);
+    border-radius: 5px;
+    margin-bottom: var(--space-xxl);
+
+    &:hover{
+        color: var(--color-accent);
+        background-color: var(--color-link);
+    }
+} */

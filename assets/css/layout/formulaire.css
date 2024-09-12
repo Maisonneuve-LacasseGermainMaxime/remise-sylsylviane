@@ -1,0 +1,130 @@
+/* Formulaire */
+main[data-name="formulaire"] h1{
+    text-align: center;
+}
+form section{
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    max-width: 700px;
+    padding: var(--space-xl);
+    /* margin-bottom: var(--space-lg); */
+    margin: auto;
+    border-radius: 5px; 
+}
+
+form input {
+    border-radius: 5px;
+}
+
+fieldset{
+    border: 1px solid var(--color-medium);
+    margin-bottom: var(--space-lg);
+}
+
+textarea{
+    min-width: 100%;
+}
+
+input[type='submit']{
+    background-color: var(--color-link);
+    color: var(--color-accent);
+    border-radius: 5px;
+    padding: var(--space-sm);
+    font-family: "Roboto";
+    font-size: var(--font-size-md);
+    cursor: pointer;
+}
+
+
+.obligatoire, form span:not(.resume>div span){
+    color: var(--color-info);
+}
+
+.resume>div span{
+    color: var(--color-link);
+}
+
+.obligatoire{
+    padding-bottom: var(--space-sm);
+}
+
+
+/* Information sur le client*/
+
+.client{
+    box-sizing: content-box;
+}
+
+.client input{
+    min-width: 330px;
+    height: 25px;
+}
+.client > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.client > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.client > div > div > div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Information sur la livraison */
+.optionLivraison > div:first-of-type{
+    display: inline-block;
+    padding-bottom: var(--space-lg);
+}
+
+.livraisonMagasin{
+    padding-bottom: var(--space-lg);
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+.livraison{
+    display: flex;
+    gap: var(--space-lg);
+}
+
+
+/* Résumé */
+.resume>div{
+    padding-bottom: var(--space-lg);
+}
+/*Navigation entre les sections*/
+
+.navigation-section {
+    display: flex;
+    justify-content: end; 
+    gap: var(--space-md);
+}
+
+/* .bouton{
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+    margin-top: var(--space-md);
+    cursor: pointer;
+    padding: var(--space-xs);
+}
+.btnRetour{
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    text-decoration: underline;
+    font-family: "Roboto";
+    font-size: var(--font-size-md);
+    cursor: pointer;
+} */
+

@@ -1,0 +1,15 @@
+.navigation-principale{
+    display: flex;
+    gap: var(--space-xxl);
+    align-items: center;
+    /* justify-content: flex-end; */
+}
+.navigation-principale a{
+    text-decoration: none;
+    color: inherit;
+    font-size: var(--font-size-xxl);
+}
+
+.navigation-principale a:hover{
+    color: var(--color-link);
+}

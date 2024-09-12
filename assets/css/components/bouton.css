@@ -1,0 +1,14 @@
+.bouton{ /*TODO: FAIRE UNE COMPOSANTE BOUTON POUR TOUT LE SITE */
+    font-weight: 100;
+    background-color: var(--color-accent);
+    color: var(--color-link);
+    padding: var(--space-sm);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: var(--font-size-xl);
+}
+
+.bouton:hover{
+    background-color: var(--color-link);
+    color: var(--color-accent);
+}
