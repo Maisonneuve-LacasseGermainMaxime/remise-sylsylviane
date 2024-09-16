@@ -3,13 +3,30 @@
     gap: var(--space-xxl);
     align-items: center;
     /* justify-content: flex-end; */
-}
-.navigation-principale a{
-    text-decoration: none;
-    color: inherit;
-    font-size: var(--font-size-xxl);
+
+
+    & a{
+        text-decoration: none;
+        color: inherit;
+        font-size: var(--font-size-xxl);
+        order: 0;
+
+        &:hover{
+            color: var(--color-link);
+        }
+    }
+
+    & div{
+        order: 1;
+        cursor: pointer;
+
+        & i:hover{
+            color: var(--color-link);
+        }
+    }
+
+
 }
 
-.navigation-principale a:hover{
-    color: var(--color-link);
-}
+
+

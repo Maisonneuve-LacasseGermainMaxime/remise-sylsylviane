@@ -9,7 +9,7 @@ function init(){
 
     setTimeout(function () {
         afficherModale();
-    }, 5000);
+    }, 5000); 
 
 
     //TODO:  Ajouter des boutons pour naviguer manuellement dans le carrousel. Ajouter un effet d'animation lors du changement d'image. Le défilement automatique s'exécute en boucle à l'infini

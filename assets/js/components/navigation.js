@@ -20,6 +20,7 @@ const liensNavigation = [
 
 // SÉLECTION HTML
 const navHTML = document.querySelector("nav");
+const conteneurModeNuit = document.querySelector(".conteneur-mode-nuit");
 
 // FONCTIONS
 
@@ -40,10 +41,25 @@ export function init(){
 
         // On appelle la fonction pour injecter les liens et le texte à afficher
         injecterLienNavigation(lienPage, texte)
+
+        conteneurModeNuit.addEventListener("click", changerModeNuit);
+
+        let theme = localStorage.getItem("theme");
+        document.body.dataset.theme = theme || "jour";
     })
+
+    
 }
 
+function changerModeNuit(evenement) {
+    let target = evenement.target;
+    let bouton = target.closest("[data-mode]");
 
+    if (bouton !== null) {
+        document.body.dataset.theme = bouton.dataset.mode;
+        localStorage.setItem("theme", bouton.dataset.mode);
+    }
+}
 /**
  * Fonction pour injecter le template du lien dans la navigation
  * @param {string} lien Le lien des pages dans le menu de navigation
