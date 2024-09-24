@@ -1,27 +1,61 @@
-main[data-name="a-propos"] *{
-    margin: auto;
-    max-width: 95ch;
-
-    
+main[data-name="a-propos"] > header {
+  margin-bottom: var(--space-xl);
 }
 
-main[data-name="a-propos"] > section{
-    margin-bottom: var(--space-xl);
-
+main[data-name="a-propos"] > section {
+  margin: auto;
+  max-width: 95ch;
+  margin-bottom: var(--space-xl);
 }
 
-/* main[data-name="a-propos"] > a{
-    color: var(--color-link);
-    font-size: var(--font-size-lg);
-    text-decoration: underline;
-    text-transform: uppercase;
-    padding: var(--space-lg);
-    background-color: var(--color-accent);
-    border-radius: 5px;
-    margin-bottom: var(--space-xxl);
+/*ANIMATION POUR LES SECTIONS*/
+.scale-in-bottom {
+  -webkit-animation: scale-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
-    &:hover{
-        color: var(--color-accent);
-        background-color: var(--color-link);
-    }
-} */
+/* ANIMATION POUR LE H1 ET H2*/
+.focus-in-contract {
+  animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  text-align: center;
+}
+.focus-in-contract h1 {
+  text-transform: uppercase;
+  font-size: var(--space-xxl);
+}
+
+.focus-in-contract h2 {
+  font-size: var(--space-xl);
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}

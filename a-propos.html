@@ -1,112 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>À propos</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script type="module" src="assets/js/pages/a-propos.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    </head>
-    <body> 
-        <!-- HEADER -->
-    <header class="entete"> 
-        <!-- LOGO -->
-        <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo"></a>        
-        <!-- NAVIGATION -->
-         <nav class="navigation-principale">
-            <div class="conteneur-mode-nuit">
-                <i class="ri-moon-line" data-mode="nuit"></i>
-                <i class="ri-sun-line" data-mode="jour"></i>
-            </div>
-         </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/pages/a-propos.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="entete">
+      <!-- LOGO -->
+      <a href="index.html"
+        ><img src="assets/img/logo2.png" alt="logo" class="logo"
+      /></a>
+      <!-- NAVIGATION -->
+      <nav class="navigation-principale">
+        <div class="conteneur-mode-nuit">
+          <i class="ri-moon-line" data-mode="nuit"></i>
+          <i class="ri-sun-line" data-mode="jour"></i>
+        </div>
+      </nav>
     </header>
-        <main data-name="a-propos">
-            <p class="test"></p>
-            <section class="section sans-opacite" id="section1">
-                <h2>À propos de nous</h2>
-                <p>Bienvenue chez Sylvia Parfum, votre destination privilégiée pour des parfums exquis et uniques. Nous sommes passionnés par l’art de la parfumerie et nous nous engageons à vous offrir une expérience olfactive inoubliable. </p>
-            </section>
-            <section class="section sans-opacite" id="section2">
-                <h2>Notre Histoire</h2>
-                <p>Fondée en 2004, Sylvia Parfum est née de la passion pour les fragrances raffinées et de l’envie de partager cette passion avec le monde. Depuis nos débuts modestes, nous avons grandi pour devenir un acteur reconnu dans le domaine de la parfumerie, grâce à notre engagement envers la qualité et l’authenticité.</p>
-            </section>
+    <main data-name="a-propos">
+      <header>
+        <div class="focus-in-contract">
+          <header>
+            <h1>Capturer l’essence de la beauté et de l’élégance</h1>
+            <h2>À travers des fragrances uniques et raffinées !</h2>
+          </header>
+        </div>
+      </header>
 
-            <section class="section droite sans-opacite" id="section3">
-                <h2>Notre mission</h2>
-                <p>Notre mission est simple : vous offrir les meilleurs parfums du monde entier. Nous sélectionnons avec soin chaque fragrance pour garantir qu’elle répond à nos normes élevées de qualité et d’originalité. Que vous recherchiez un parfum classique, une nouveauté tendance ou une création artisanale, nous avons quelque chose pour chaque goût et chaque occasion.</p>
-            </section>
+      <div class="carrousel" data-carrousel>
+        <div class="conteneur-image-principale">
+          <img class="image-principale" src="assets/img/parfum-2.jpg" alt="" />
+        </div>
+        <img
+          src="assets/img/fleche-droite.png"
+          alt="bouton flèché"
+          class="boutonAvancer droit"
+        />
+        <img
+          src="assets/img/fleche-droite.png"
+          alt="bouton flèché"
+          class="boutonReculer gauche"
+        />
+      </div>
 
-            <div class="carrousel section" data-carrousel>
-                <div class="conteneur-image-principale">
-                    <img class="image-principale" src="assets/img/parfum-2.jpg" alt="" />
-                    
-                </div>
+      <section class="section sans-opacite" id="section1">
+        <h2>À propos de nous</h2>
+        <p>
+          Bienvenue chez Sylvia Parfum, votre destination privilégiée pour des
+          parfums exquis et uniques. Nous sommes passionnés par l’art de la
+          parfumerie et nous nous engageons à vous offrir une expérience
+          olfactive inoubliable.
+        </p>
+      </section>
+      <section class="section sans-opacite" id="section2">
+        <h2>Notre Histoire</h2>
+        <p>
+          Fondée en 2004, Sylvia Parfum est née de la passion pour les
+          fragrances raffinées et de l’envie de partager cette passion avec le
+          monde. Depuis nos débuts modestes, nous avons grandi pour devenir un
+          acteur reconnu dans le domaine de la parfumerie, grâce à notre
+          engagement envers la qualité et l’authenticité.
+        </p>
+      </section>
 
-                <!-- Le gabarit à utiliser -->
-                <template id="conteneur-image-navigation">
-                    <div class="conteneur-image-navigation">
-                        <img src="assets/img/parfum-3.jpg" alt="" />
-                    </div>
-                </template>
+      <section class="section droite sans-opacite" id="section3">
+        <h2>Notre mission</h2>
+        <p>
+          Notre mission est simple : vous offrir les meilleurs parfums du monde
+          entier. Nous sélectionnons avec soin chaque fragrance pour garantir
+          qu’elle répond à nos normes élevées de qualité et d’originalité. Que
+          vous recherchiez un parfum classique, une nouveauté tendance ou une
+          création artisanale, nous avons quelque chose pour chaque goût et
+          chaque occasion.
+        </p>
+      </section>
 
-                <!-- La liste où placer le clone -->
-                <div class="carrousel-liste-images"></div>
+      <section class="section sans-opacite" id="section4">
+        <h2>Nos Valeurs</h2>
+
+        <p>
+          Qualité : Nous nous engageons à ne proposer que des produits de la
+          plus haute qualité.
+        </p>
+        <p>
+          Authenticité : Chaque parfum que nous vendons est 100% authentique et
+          provient directement des maisons de parfumerie.
+        </p>
+        <p>
+          Satisfaction Client : Votre satisfaction est notre priorité absolue.
+          Nous sommes là pour vous aider à trouver le parfum parfait et pour
+          répondre à toutes vos questions.
+        </p>
+      </section>
+      <section class="section droite sans-opacite" id="section5">
+        <h2>Pourquoi nous choisir</h2>
+
+        <p>
+          Large Sélection : Des centaines de parfums pour hommes et femmes, des
+          classiques intemporels aux dernières nouveautés.
+        </p>
+        <p>
+          Service Client Exceptionnel : Une équipe dédiée pour vous assister
+          dans votre choix et répondre à vos besoins.
+        </p>
+        <p>
+          Livraison Rapide et Sécurisée : Recevez vos parfums rapidement et en
+          toute sécurité, où que vous soyez.
+        </p>
+      </section>
+      <section class="section droite sans-opacite" id="section6">
+        <h2>Contact</h2>
+        <p>
+          Vous avez des questions ? N'hésitez pas à nous contacter. Nous sommes
+          impatients de vous aider à découvrir votre prochaine fragrance
+          préférée !
+        </p>
+        <div class="bouton shake-bottom">Nous contacter</div>
+      </section>
+
+      <div class="modale-conteneur invisible">
+        <div class="modale">
+          <img
+            src="assets/img/close-circle-fill.png"
+            alt=""
+            class="fermer-modale"
+          />
+          <article>
+            <img src="assets/img/parfum-infolettre.jpg" alt="" />
+            <div>
+              <header>
+                <h2>Besoin de conseils?</h2>
+              </header>
+              <h3>Appelez-nous: (555) 555-5555</h3>
+              <p>
+                Nos conseillers experts se feront un plaisir de vous aider à
+                trouver la fragrance qui vous conviendra.
+              </p>
+              <a href="#">En savoir plus</a>
             </div>
-            <a href="/" class="bouton">Voir les derniers arrivages</a>
-            <section class="section sans-opacite" id="section4">
-                <h2>Nos Valeurs</h2>
-            
-                    <p>Qualité : Nous nous engageons à ne proposer que des produits de la plus haute qualité.</p>
-                    <p>Authenticité : Chaque parfum que nous vendons est 100% authentique et provient directement des maisons de parfumerie.</p>
-                    <p>Satisfaction Client : Votre satisfaction est notre priorité absolue. Nous sommes là pour vous aider à trouver le parfum parfait et pour répondre à toutes vos questions.</p>
-    
-            </section>
-            <section class="section droite sans-opacite" id="section5">
-                <h2>Pourquoi nous choisir</h2>
-                
-                    <p>Large Sélection : Des centaines de parfums pour hommes et femmes, des classiques intemporels aux dernières nouveautés.</p>
-                    <p>Service Client Exceptionnel : Une équipe dédiée pour vous assister dans votre choix et répondre à vos besoins.</p>
-                    <p>Livraison Rapide et Sécurisée : Recevez vos parfums rapidement et en toute sécurité, où que vous soyez.</p>
-           
-            </section>
-            <section class="section droite sans-opacite" id="section6">
-                <h2>Contact</h2>
-                <p>Vous avez des questions ? N'hésitez pas à nous contacter. Nous sommes impatients de vous aider à découvrir votre prochaine fragrance préférée !</p>
-            </section>
-
-            <div class="modale-conteneur invisible">
-                <div class="modale ">
-                    <div class="carte-simple">
-                        <img src="assets/img/parfum-infolettre.jpg" alt="">
-                        <div>
-                            <header>
-                                <h2>Besoin de conseils?</h2>
-                            </header>
-                            <h3>Appelez-nous: (555) 555-5555</h3>
-                            <p>Nos conseillers experts se feront un plaisir de vous aider à trouver la fragrance qui vous conviendra.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <header>
-                            <h2>Obtenez 10% de rabais</h2>
-                        </header> 
-                        <p>Abonnez-vous à notre infolettre afin de profiter d'un rabais de 10% sur votre première commande et de recevoir en exclusivité nos meilleures offres.</p>
-                        <form action="" method="get">
-                            <label for="courriel"></label>
-                            <input type="email" name="courriel" placeholder="Votre adresse courriel">
-                            <button class="bouton">M'abonner</button>
-                        </form>
-                        <a href="#" class="retour">Non merci, je préfère continuer mon shopping.</a>
-                    </div>
-                    
-                    <div class="fermer-modale interactive"><i class="icone fa fa-times"></i>Fermer</div>
-                </div>
-            </div>
-        </main>
-        <footer class="pied-de-site">
-            <p>&copy; 2024 Tous droits réservés</p> 
-        </footer>
-    </body>
-</html> 
+          </article>
+          <article>
+            <header>
+              <h2>Obtenez 10% de rabais</h2>
+            </header>
+            <p>
+              Abonnez-vous à notre infolettre afin de profiter d'un rabais de
+              10% sur votre première commande et de recevoir en exclusivité nos
+              meilleures offres.
+            </p>
+            <form action="" method="get">
+              <label for="courriel"></label>
+              <input
+                type="email"
+                name="courriel"
+                placeholder="Votre adresse courriel"
+              />
+              <div>
+                <button class="bouton">M'abonner</button>
+              </div>
+            </form>
+            <a href="#" class="retour"
+              >Non merci, je préfère continuer mon shopping.</a
+            >
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer class="pied-de-site">
+      <p>&copy; 2024 Tous droits réservés</p>
+    </footer>
+  </body>
+</html>

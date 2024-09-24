@@ -1,32 +1,25 @@
-.navigation-principale{
-    display: flex;
-    gap: var(--space-xxl);
-    align-items: center;
-    /* justify-content: flex-end; */
+.navigation-principale {
+  display: flex;
+  gap: var(--space-xxl);
+  align-items: center;
 
+  & a {
+    text-decoration: none;
+    color: inherit;
+    font-size: var(--font-size-xxl);
+    order: 0;
 
-    & a{
-        text-decoration: none;
-        color: inherit;
-        font-size: var(--font-size-xxl);
-        order: 0;
-
-        &:hover{
-            color: var(--color-link);
-        }
+    &:hover {
+      color: var(--color-link);
     }
+  }
 
-    & div{
-        order: 1;
-        cursor: pointer;
+  & div {
+    order: 1;
+    cursor: pointer;
 
-        & i:hover{
-            color: var(--color-link);
-        }
+    & i:hover {
+      color: var(--color-link);
     }
-
-
+  }
 }
-
-
-

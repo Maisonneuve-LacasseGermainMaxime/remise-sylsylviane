@@ -1,91 +1,70 @@
 .modale-conteneur {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100dvw;
-    min-height: 100dvh;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    z-index: 666;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100dvw;
+  min-height: 100dvh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  z-index: 666;
 
-    & .modale {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: var(--space-xxl);
-        position: relative;
-        background-color: var(--color-primary);
-        border: 1px solid var(--color-accent);
+  & .modale {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: var(--space-xl);
+    padding: 1em;
+
+    background-color: hsl(0, 0%, 87%);
+    color: #121212;
+
+    & article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & > div {
+        background-color: #121212;
+        color: hsl(0, 0%, 87%);
+        margin: 0;
         padding: var(--space-lg);
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        min-width: 60%;
-        max-width: 500px;
-
-        & h2 {
-            font-weight: 600;
-            color: var(--color-link);
-            font-size: 50px;
-        }
-
-        & > div:not(div:last-of-type) {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-
-        & > div div{
-            max-width: 82ch;
-            background-color: var(--color-accent);
-            color: var(--color-link);
-            padding: var(--space-lg);
-        }
-
-        & div:last-of-type{
-            padding-right: var(--space-md);
-        }
-
-        & p{
-            font-size: var(--font-size-lg);
-            margin-top: var(--space-lg);
-        }
-
-        & .fermer-modale {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-        
-        & img{
-            max-width: 100%;
-        }
-
-        & a{
-            margin-top: var(--space-xxxl);
-            border-top: 1px solid var(--color-accent);
-            padding-top: var(--space-lg);
-            font-size: var(--font-size-sm);
-            font-weight: 300;
-            font-family: "Roboto", sans-serif;
-        }
-
-        & input{
-            min-width: 400px; /* TODO: VERIFIER CAR SUR PETIT ÉCRAN, NE FONCTIONNE PAS */
-            height: 35px;
-            margin-top: var(--space-lg);
-            padding: var(--space-lg);
-        }
-        & h3{
-            font-weight: 500;
-        }
+      }
     }
+    & form {
+      margin-top: var(--space-xl);
+
+      & input {
+        min-width: 100%;
+        padding: var(--space-md);
+        margin-bottom: var(--space-md);
+      }
+
+      & button {
+        background-color: #121212;
+        color: hsl(0, 0%, 87%);
+
+        &:hover {
+          background-color: #d7b053;
+          color: #121212;
+          transition-duration: 0.25s;
+        }
+      }
+    }
+    & .fermer-modale {
+      position: absolute;
+      top: 10px;
+      right: 0px;
+      padding-right: var(--space-md);
+    }
+
+    & a {
+      margin-top: var(--space-xxxl);
+      padding-top: var(--space-md);
+      border-top: 1px solid #121212;
+      color: #121212;
+    }
+  }
 }
-
-
