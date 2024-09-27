@@ -9,6 +9,7 @@
   font-family: var(--font-family-primary);
   width: fit-content;
   margin-top: var(--space-sm);
+  transition: background-color 500ms;
 }
 
 .bouton:hover {

@@ -2,7 +2,7 @@ class Carrousel {
   constructor(conteneurHTML, tableauImages) {
     //ConteneurHTML
     this.conteneurHTML = conteneurHTML;
-    this.imgageConteneur =
+    this.imageConteneur =
       this.conteneurHTML.querySelector(".image-principale");
     this.boutonAvancer = this.conteneurHTML.querySelector(".boutonAvancer");
 
@@ -10,8 +10,6 @@ class Carrousel {
     this.tableauImages = tableauImages;
 
     this.position = 0;
-    let imageAuDepart = this.tableauImages[this.position];
-    this.afficherImage(imageAuDepart);
 
     setInterval(this.avancer.bind(this), 3000);
 
@@ -20,12 +18,24 @@ class Carrousel {
 
     this.boutonAvancer.addEventListener("click", this.avancer.bind(this));
     this.boutonReculer.addEventListener("click", this.reculer.bind(this));
-  }
+  } 
 
+  /**
+   * Fonction pour afficher les images du carrousel
+   */
   afficherImage(source) {
-    this.imgageConteneur.src = source;
+    this.imageConteneur.classList.remove("fade-in");
+    setTimeout(
+      function() {      
+        this.imageConteneur.src = source;
+        this.imageConteneur.classList.add('fade-in');
+    }.bind(this), 500); 
   }
+  
 
+  /**
+   * Fonction pour avancer dans le carrousel
+   */
   avancer() {
     this.position++;
     if (this.position >= this.tableauImages.length) {
@@ -35,7 +45,9 @@ class Carrousel {
     let image = this.tableauImages[this.position];
     this.afficherImage(image);
   }
-
+  /**
+   * Fonction pour reculer dans le carrousel
+   */
   reculer() {
     this.position--;
     if (this.position < 0) {

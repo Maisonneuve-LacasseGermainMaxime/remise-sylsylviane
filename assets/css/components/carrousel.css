@@ -1,3 +1,11 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .carrousel {
   margin: auto;
   margin-bottom: 40px;
@@ -7,18 +15,7 @@
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-.conteneur-image-principale {
-  width: 800px;
-  height: 400px;
-}
-.conteneur-image-principale img {
-  width: 800px;
-  height: 400px;
-  margin: 0;
-  display: inline-block;
-  background-size: cover;
-  object-fit: cover;
-}
+/* BOUTON DE DÉFILEMENT - FLECHE */
 .carrousel > img {
   position: absolute;
   width: 70px;
@@ -26,24 +23,36 @@
   top: 150px;
 }
 .gauche {
-  left: 0px;
+  left: -100px;
   opacity: 0.4;
   transform: rotate(180deg);
   transition: all 0.3s ease;
 }
 .droit {
-  right: 0;
+  right: -95px;
   opacity: 0.4;
   transform: rotate(0deg);
-  transition: all 0.3s ease;
+  transition: all 350ms ease;
 }
 .gauche:hover {
   transform: rotate(180deg) scale(1.1);
   opacity: 1;
-  transition: all 0.3s ease;
 }
 .droit:hover {
   transform: rotate(0deg) scale(1.1);
   opacity: 1;
-  transition: all 0.3s ease;
 }
+.conteneur-image-principale img {
+  width: 792px;
+  height: 392px;
+  margin: 0;
+  display: inline-block;
+  background-size: cover;
+  object-fit: cover;
+}
+.fade-in{
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+
+}
+
+

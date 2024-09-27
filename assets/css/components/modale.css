@@ -13,8 +13,8 @@
 
   & .modale {
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    max-width: 40%;
     column-gap: var(--space-xl);
     padding: 1em;
 
@@ -25,6 +25,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      max-width: 50%;
 
       & > div {
         background-color: #121212;
@@ -67,4 +68,8 @@
       color: #121212;
     }
   }
+}
+
+.retour span{
+  text-decoration: underline;
 }

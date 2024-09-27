@@ -1,22 +1,24 @@
 import { init as initNavigation } from "../components/navigation.js";
-import {
+import { 
   init as initModale,
   afficherModale,
   cacherModale,
 } from "../components/modale.js";
+
 import Carrousel from "../classes/Carrousel.js";
 import ScrollAnimator from "../classes/ScrollAnimator.js";
 
+/**
+ * Fonction au chargement de la page
+ */
 function init() {
   initNavigation();
   initModale();
 
-  // TODO: DÉCOMMENTER POUR LA BOITE MODALE
   setTimeout(function () {
     afficherModale();
   }, 5000);
 
-  //TODO:  Ajouter des boutons pour naviguer manuellement dans le carrousel. Ajouter un effet d'animation lors du changement d'image. Le défilement automatique s'exécute en boucle à l'infini
   let carrouselConteneur = document.querySelector("[data-carrousel]");
   let tableauImages = [
     "assets/img/carrousel-1.jpg",
@@ -29,15 +31,11 @@ function init() {
   ];
   let carrousel = new Carrousel(carrouselConteneur, tableauImages);
 
-  //TODO: Ajouter un effet d'animation lors de l'affichage au défilement de la page et lors de l'interaction avec plusieurs éléments de la page (survol, clic). Vous devez animer au moins 5 éléments différents par css ET JavaScript.
   let zone = null; //si null c'est la page
   let cibles = document.querySelectorAll(".section");
   new ScrollAnimator(zone, cibles); //besoin de la classe sans-opacité pour fonctionner
 
-  let carrouselLoade = localStorage.getItem("carrouselOuvert");
-  if ((carrouselLoade = "true")) {
-  }
-  //TODO: VOIR 5 DERNIERS POINTS DU DOCUMENT OBJECTIFS ET CONSIGNE SUR L'ORGANISATION DES FICHIERS ET PLUS.
+  
 }
 
 init();

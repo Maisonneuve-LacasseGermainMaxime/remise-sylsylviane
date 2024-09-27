@@ -26,7 +26,7 @@ h3 {
 }
 p {
   font-family: "Roboto";
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   line-height: 1.5;
   font-weight: 400;
 }
@@ -34,7 +34,11 @@ a {
   font-size: var(--font-size-md);
   text-decoration: none;
   color: var(--color-accent);
-  transition: all 350ms;
+  transition: color 350ms;
+
+  &:hover {
+    color: var(--color-link);
+  }
 }
 label {
   font-family: "Roboto";

@@ -44,6 +44,10 @@ export function init() {
   });
 }
 
+/**
+ * Fonction qui modifie le thème du site (mode sombre ou clair)
+ * @param {evenement} evenement 
+ */
 function changerModeNuit(evenement) {
   let target = evenement.target;
   let bouton = target.closest("[data-mode]");

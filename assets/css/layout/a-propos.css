@@ -1,34 +1,3 @@
-main[data-name="a-propos"] > header {
-  margin-bottom: var(--space-xl);
-}
-
-main[data-name="a-propos"] > section {
-  margin: auto;
-  max-width: 95ch;
-  margin-bottom: var(--space-xl);
-}
-
-/*ANIMATION POUR LES SECTIONS*/
-.scale-in-bottom {
-  -webkit-animation: scale-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: scale-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-/* ANIMATION POUR LE H1 ET H2*/
-.focus-in-contract {
-  animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  text-align: center;
-}
-.focus-in-contract h1 {
-  text-transform: uppercase;
-  font-size: var(--space-xxl);
-}
-
-.focus-in-contract h2 {
-  font-size: var(--space-xl);
-}
-
 @keyframes focus-in-contract {
   0% {
     letter-spacing: 1em;
@@ -59,3 +28,37 @@ main[data-name="a-propos"] > section {
     opacity: 1;
   }
 }
+
+main[data-name="a-propos"] > header {
+  margin-bottom: var(--space-xl);
+}
+
+main[data-name="a-propos"] > section {
+  /* margin: auto; 
+  max-width: 95ch; */
+  margin-bottom: var(--space-xl);
+  
+}
+
+/*ANIMATION POUR LES SECTIONS*/
+.scale-in-bottom {
+  -webkit-animation: scale-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* ANIMATION POUR LE H1 ET H2*/
+.focus-in-contract {
+  animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  text-align: center;
+}
+.focus-in-contract h1 {
+  text-transform: uppercase;
+  font-size: var(--space-xxl);
+}
+
+.focus-in-contract h2 {
+  font-size: var(--space-xl);
+}
+
+

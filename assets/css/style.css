@@ -11,6 +11,8 @@
 @import url("./components/modale.css");
 @import url("./components/carrousel.css");
 @import url("./components/bouton.css");
+@import url("./components/texte-image.css");
+
 
 /* Mise en page complexe */
 @import url("./layout/general.css");
