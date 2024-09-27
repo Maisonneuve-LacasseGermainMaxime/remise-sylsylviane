@@ -7,6 +7,8 @@ import {
 
 import Carrousel from "../classes/Carrousel.js";
 import ScrollAnimator from "../classes/ScrollAnimator.js";
+import {init as initModeNuit} from "../components/mode-nuit.js";
+
 
 /**
  * Fonction au chargement de la page
@@ -14,7 +16,7 @@ import ScrollAnimator from "../classes/ScrollAnimator.js";
 function init() {
   initNavigation();
   initModale();
-
+  initModeNuit();
   setTimeout(function () {
     afficherModale();
   }, 5000);

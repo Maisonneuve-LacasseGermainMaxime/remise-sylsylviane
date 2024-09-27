@@ -1,7 +1,6 @@
 // Variables et sélections HTML
 const modale = document.querySelector(".modale-conteneur");
 const bouton = document.querySelector(".fermer-modale");
-const lien = document.querySelector(".retour");
 
 //Fonctions
 
@@ -9,8 +8,10 @@ const lien = document.querySelector(".retour");
  * Fonction au chargement de la page
  */
 export function init() {
-  bouton.addEventListener("click", cacherModale);
-  lien.addEventListener("click", cacherModale);
+  // bouton.addEventListener("click", cacherModale);
+  bouton.addEventListener("click", function(){
+    modale.classList.add("scale-out-center");
+  });
 }
 
 /**
@@ -26,6 +27,8 @@ export function afficherModale() {
 export function cacherModale() {
   modale.classList.add("invisible");
 }
+
+
 
 //Exécution
 // init();

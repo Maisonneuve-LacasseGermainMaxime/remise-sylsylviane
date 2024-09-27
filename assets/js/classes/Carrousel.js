@@ -11,7 +11,7 @@ class Carrousel {
 
     this.position = 0;
 
-    setInterval(this.avancer.bind(this), 3000);
+    setInterval(this.avancer.bind(this), 5000);
 
     this.boutonAvancer = this.conteneurHTML.querySelector(".boutonAvancer");
     this.boutonReculer = this.conteneurHTML.querySelector(".boutonReculer");

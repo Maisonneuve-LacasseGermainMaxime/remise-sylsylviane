@@ -1,4 +1,5 @@
 import { init as initNavigation } from "../components/navigation.js";
+import {init as initModeNuit} from "../components/mode-nuit.js";
 
 // VARIABLES
 let sectionActuelle = 0;
@@ -28,7 +29,7 @@ function init() {
   //DÉCOMMENTER POUR CACHER LES SECTIONS
   toutCacher();
   afficherSection();
-
+  initModeNuit();
   premierBoutonRadio.checked = true;
   resumeTransporteur.textContent = "Poste Canada";
 

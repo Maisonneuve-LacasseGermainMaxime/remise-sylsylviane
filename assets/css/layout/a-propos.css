@@ -1,10 +1,11 @@
 @keyframes focus-in-contract {
   0% {
-    letter-spacing: 1em;
+    letter-spacing: 0.75em;
     -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
@@ -30,12 +31,11 @@
 }
 
 main[data-name="a-propos"] > header {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-xxl);
+  /* min-height: 25dvh; */
 }
 
 main[data-name="a-propos"] > section {
-  /* margin: auto; 
-  max-width: 95ch; */
   margin-bottom: var(--space-xl);
   
 }

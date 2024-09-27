@@ -1,4 +1,6 @@
-import {init as initNavigation} from "../components/navigation.js"
+import {init as initNavigation} from "../components/navigation.js";
+import {init as initModeNuit} from "../components/mode-nuit.js";
+
 
 // VARIABLES
 const tableauProduits = [
@@ -60,7 +62,7 @@ const aside = document.querySelector(".aside");
 function init(){
 
         initNavigation();
-
+        initModeNuit();
         //On appelle la fonction afficherImagesProduits
         afficherImagesProduits(tableauProduits)
     
