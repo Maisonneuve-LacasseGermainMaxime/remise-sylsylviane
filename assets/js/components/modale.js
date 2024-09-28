@@ -9,7 +9,7 @@ const bouton = document.querySelector(".fermer-modale");
  */
 export function init() {
   // bouton.addEventListener("click", cacherModale);
-  bouton.addEventListener("click", function(){
+  bouton.addEventListener("click", function () {
     modale.classList.add("scale-out-center");
   });
 }
@@ -27,8 +27,6 @@ export function afficherModale() {
 export function cacherModale() {
   modale.classList.add("invisible");
 }
-
-
 
 //Exécution
 // init();

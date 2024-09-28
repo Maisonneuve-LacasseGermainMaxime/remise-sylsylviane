@@ -1,0 +1,39 @@
+Lien du site sur GitHub: https://maisonneuve-lacassegermainmaxime.github.io/remise-sylsylviane/index.html
+
+FONCTIONNALITES
+
+PAGE ACCUEIL:
+
+Pour la page accueil, il est possible de cliquer sur chaque fiche produit et d'afficher les détails de ceux-ci dans l'aside. Dans le premier tp, j'ai ajouter un style sur la fiche produit sélectionnée. 
+
+J'ai appliqué une légère transition sur les boutons filtres, ainsi que sur les liens de la navigation. On trouve également un mode sombre/clair accessible dans tout le site.
+
+PAGE À PROPOS:
+
+Pour la page à propos, j'ai opté pour une animation pour le header au chargement de la page et une animation au défilement de la page pour le contenu texte-image.
+
+J'ai réussi à faire fonctionner le carrousel correctement.
+
+J'ai ajouté une boite modale pour un abonnement à l'infolettre et j'y ai ajouté une animation lorsqu'on clique sur le bouton pour la fermer. Peut-être qu'il serait préférable d'effectuer un changement au niveau de la couleur de fond sur le modale-conteneur pour un plus bel effet, mais sinon, ça fonctionne bien. Ça m'embêtait au niveau design, mais j'ai décidé de laisser le tout comme ça pour le moment. 
+
+PAGE FORMULAIRE:
+
+J'ai ajouté une animation sur le formulaire. Celui-ci est fonctionnel, quoique je n'ai pas corrigé les erreurs du tp2.
+
+STRUCTURE DU CODE:
+
+J'ai opté pour la structure que tu nous avais proposé, je trouve que tout est bien classé par répertoire. J'ai divisé le css en base, components et layout. Le javascript est divisé en classes, components et page. Les images sont dans le fichier img. Le tout réunit dans assets. 
+
+Pour le code, je m'en suis également tenu à la structure présentée en classe, soit les variables dans le haut des fichier .js, suivi par les sélecteur, les fonctions et l'exécution. 
+
+TEST DU CODE:
+
+J'ai pris, dès le départ, l'habitude de tester mes sélections avec des console.log pour m'assurer que je cible bien les bons éléments. Je teste tout au fur et à mesure que j'écris mon code pour ne pas accumuler des erreurs. C'est de cette façon que j'ai réussi à maintenir un bon code.   
+
+DIFFICULTÉS RENCONTRÉES: 
+
+Je suis très fière d'avoir fait ce site, même si ça m'a pris énormément de temps. Faire la page d'accueil a été le plus difficile. J'ai du relire mes notes et prendre le temps de comprendre par où je devais commencer. 
+Le formulaire a mieux été quoique ça a été très long également.
+Pour la page à propos, c'est le carrousel qui a été le plus dur. Je n'ai pas encore assimilé complètement les classes et this, vu qu'on a pas eu le chance d'en faire beaucoup. Donc, ajouter les fonctionnalités sur les boutons et ajouter une animation lors du défilement des images a été plus complexes pour moi.
+J'aimerais bien savoir si nous aurons la possibilité d'avoir la solution du tp3 pour pouvoir comparer notre version à la tienne. Si oui, laisse le moi savoir. 
+Merci beaucoup pour ton enseignement! 

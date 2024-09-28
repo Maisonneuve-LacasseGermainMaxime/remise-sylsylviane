@@ -2,23 +2,35 @@ class Carrousel {
   constructor(conteneurHTML, tableauImages) {
     //ConteneurHTML
     this.conteneurHTML = conteneurHTML;
-    this.imageConteneur =
-      this.conteneurHTML.querySelector(".image-principale");
+    this.imageConteneur = this.conteneurHTML.querySelector(".image-principale");
     this.boutonAvancer = this.conteneurHTML.querySelector(".boutonAvancer");
+    this.boutonAvancer = this.conteneurHTML.querySelector(".boutonAvancer");
+    this.boutonReculer = this.conteneurHTML.querySelector(".boutonReculer");
 
     //Liste d'images à afficher
     this.tableauImages = tableauImages;
 
     this.position = 0;
+    let idInterval;
+    idInterval = setInterval(this.avancer.bind(this), 3000);
+    this.boutonAvancer.addEventListener(
+      "click",
+      function () {
+        clearInterval(idInterval);
+        this.avancer();
+        idInterval = setInterval(this.avancer.bind(this), 3000);
+      }.bind(this)
+    );
 
-    setInterval(this.avancer.bind(this), 5000);
-
-    this.boutonAvancer = this.conteneurHTML.querySelector(".boutonAvancer");
-    this.boutonReculer = this.conteneurHTML.querySelector(".boutonReculer");
-
-    this.boutonAvancer.addEventListener("click", this.avancer.bind(this));
-    this.boutonReculer.addEventListener("click", this.reculer.bind(this));
-  } 
+    this.boutonReculer.addEventListener(
+      "click",
+      function () {
+        clearInterval(idInterval);
+        this.reculer();
+        idInterval = setInterval(this.reculer.bind(this), 3000);
+      }.bind(this)
+    );
+  }
 
   /**
    * Fonction pour afficher les images du carrousel
@@ -26,12 +38,13 @@ class Carrousel {
   afficherImage(source) {
     this.imageConteneur.classList.remove("fade-in");
     setTimeout(
-      function() {      
+      function () {
         this.imageConteneur.src = source;
-        this.imageConteneur.classList.add('fade-in');
-    }.bind(this), 500); 
+        this.imageConteneur.classList.add("fade-in");
+      }.bind(this),
+      100
+    );
   }
-  
 
   /**
    * Fonction pour avancer dans le carrousel

@@ -1,12 +1,12 @@
 @keyframes scale-out-center {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     opacity: 1;
   }
 }
@@ -27,7 +27,7 @@
   & .modale {
     position: relative;
     display: flex;
-    max-width: 40%;
+    max-width: 50%;
     column-gap: var(--space-xl);
     padding: 1em;
 
@@ -84,11 +84,12 @@
   }
 }
 
-.retour span{
+.retour span {
   text-decoration: underline;
 }
 
 .scale-out-center {
-	-webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: scale-out-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: scale-out-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }

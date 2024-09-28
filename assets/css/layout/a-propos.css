@@ -37,7 +37,6 @@ main[data-name="a-propos"] > header {
 
 main[data-name="a-propos"] > section {
   margin-bottom: var(--space-xl);
-  
 }
 
 /*ANIMATION POUR LES SECTIONS*/
@@ -60,5 +59,3 @@ main[data-name="a-propos"] > section {
 .focus-in-contract h2 {
   font-size: var(--space-xl);
 }
-
-

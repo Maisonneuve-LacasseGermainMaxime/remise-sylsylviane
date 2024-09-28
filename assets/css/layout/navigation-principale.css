@@ -12,7 +12,7 @@
     order: 1;
     cursor: pointer;
 
-    & i{
+    & i {
       color: var(--color-accent);
       transition: color 350ms;
     }
@@ -22,4 +22,3 @@
     }
   }
 }
-

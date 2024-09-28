@@ -1,5 +1,5 @@
 import { init as initNavigation } from "../components/navigation.js";
-import { 
+import {
   init as initModale,
   afficherModale,
   cacherModale,
@@ -7,8 +7,7 @@ import {
 
 import Carrousel from "../classes/Carrousel.js";
 import ScrollAnimator from "../classes/ScrollAnimator.js";
-import {init as initModeNuit} from "../components/mode-nuit.js";
-
+import { init as initModeNuit } from "../components/mode-nuit.js";
 
 /**
  * Fonction au chargement de la page
@@ -36,8 +35,6 @@ function init() {
   let zone = null; //si null c'est la page
   let cibles = document.querySelectorAll(".section");
   new ScrollAnimator(zone, cibles); //besoin de la classe sans-opacité pour fonctionner
-
-  
 }
 
 init();

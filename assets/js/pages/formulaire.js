@@ -1,5 +1,5 @@
 import { init as initNavigation } from "../components/navigation.js";
-import {init as initModeNuit} from "../components/mode-nuit.js";
+import { init as initModeNuit } from "../components/mode-nuit.js";
 
 // VARIABLES
 let sectionActuelle = 0;

@@ -16,12 +16,9 @@
   color: var(--color-primary);
   border-radius: 3px;
   cursor: pointer;
-
 }
 
-.parfum.bordure{
+.parfum.bordure {
   border: 1px solid black;
   padding: 5px;
 }
-
-
